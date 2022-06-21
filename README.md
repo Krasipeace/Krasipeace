@@ -1,5 +1,5 @@
 - 👋 Hi, I’m Krasimir Dramaliev (@Krasipeace)
-- 👀 I’m interested in web technologies
+- 👀 I’m interested in cross platforms and web technologies
 - 🌱 I’m currently learning c# web development @SoftUni Bulgaria
 
 
