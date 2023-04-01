@@ -3,6 +3,7 @@
 - 🌱 I’m currently learning c# web development [@SoftUni Bulgaria](https://softuni.bg)
 
 ![Metrics](/github-metrics.svg)
+![Codewars](https://www.codewars.com/users/Krasipeace/badges/large)
 
  <br /> <br />
 ![Jokes Card](https://readme-jokes.vercel.app/api)
