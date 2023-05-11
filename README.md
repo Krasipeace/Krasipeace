@@ -8,7 +8,7 @@
   <img src="https://www.codewars.com/users/Krasipeace/badges/large" alt="codewarsStats">
 </picture>
 
- <br /> <br />
+ <br />
 ![Jokes Card](https://readme-jokes.vercel.app/api)
 
 <!---
