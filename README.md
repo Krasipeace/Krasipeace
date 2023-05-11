@@ -4,7 +4,9 @@
   <img src="/github-metrics.svg" alt="Metrics">
 </picture>
 
-![Codewars](https://www.codewars.com/users/Krasipeace/badges/large)
+<picture>
+  <img src="https://www.codewars.com/users/Krasipeace/badges/large" alt="codewarsStats">
+</picture>
 
  <br /> <br />
 ![Jokes Card](https://readme-jokes.vercel.app/api)
