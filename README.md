@@ -4,11 +4,6 @@
   <img src="/github-metrics.svg" alt="Metrics" width="100%">
 </picture>
 
-<br />
-![codewars-stats](https://www.codewars.com/users/Krasipeace/badges/large)
-
- <br /> <br/>
-![Jokes Card](https://readme-jokes.vercel.app/api)
 
 <!---
 Krasipeace/Krasipeace is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
