@@ -29,7 +29,6 @@ jobs:
           template: classic
           base: header, activity, community, repositories, metadata
           commits_authoring: krasipeace
-          config_display: columns
           config_timezone: Europe/Sofia
           plugin_achievements: yes
           plugin_achievements_display: detailed
