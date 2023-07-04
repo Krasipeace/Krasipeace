@@ -9,6 +9,11 @@
   <img src="https://www.codewars.com/users/Krasipeace/badges/large" alt="codewars-stats">
 </picture>
 
+<br />
+### Books I'm currently reading
+<!-- GOODREADS-LIST:START -->
+<!-- GOODREADS-LIST:END -->
+
  <br /> <br/>
 ![Jokes Card](https://readme-jokes.vercel.app/api)
 
