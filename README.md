@@ -6,7 +6,7 @@
 
 <br />
 <picture>
-    <a href="www.codewars.com/r/N50bPQ">
+    <a href="https://codewars.com/r/N50bPQ">
       <img src="https://www.codewars.com/users/Krasipeace/badges/large" alt="codewars-stats-and-link-to-join-the-battle">
     </a>
 </picture>
