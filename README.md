@@ -5,6 +5,7 @@
 </picture>
 
 <br />
+
 <picture>
     <a href="https://codewars.com/r/N50bPQ">
       <img src="https://www.codewars.com/users/Krasipeace/badges/large" alt="codewars-stats-and-link-to-join-the-battle">
@@ -13,7 +14,6 @@
 
 <br />
 
- <br /> <br/>
 ![Jokes Card](https://readme-jokes.vercel.app/api)
 
 
