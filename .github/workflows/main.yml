@@ -12,7 +12,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: krasipeace/metrics@latest
+      - uses: krasipeace/metrics@master
         with:
           # Your GitHub token
           # The following scopes are required:
