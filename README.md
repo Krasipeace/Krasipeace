@@ -2,10 +2,7 @@
 
 `Press F5, if profile stats hasn't loaded...`
 <br />
-<picture>
-  <img src="/github-metrics.svg" alt="Metrics">
-</picture>
-
+[<img alt="Metrics" src="/github-metrics.svg">](#)
 <br />
 
 <picture>
