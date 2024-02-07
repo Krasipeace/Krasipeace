@@ -5,11 +5,7 @@
 [<img alt="Metrics" src="/github-metrics.svg">](#)
 <br />
 
-<picture>
-    <a href="https://codewars.com/r/N50bPQ">
-      <img src="https://www.codewars.com/users/Krasipeace/badges/large" alt="codewars-stats-and-link-to-join-the-battle">
-    </a>
-</picture>
+[<img alt="codewars-stats-and-link-to-join-the-battle" src="https://www.codewars.com/users/Krasipeace/badges/large">](https://codewars.com/r/N50bPQ)
 
 <br />
 
