@@ -1,7 +1,9 @@
 > 🖥️ Studying c# web development [@SoftUni Bulgaria](https://softuni.bg) 👀
 
 <br />
+
 [<img alt="Metrics" src="/github-metrics.svg">](#)
+
 <br />
 
 [<img alt="codewars-stats-and-link-to-join-the-battle" src="https://www.codewars.com/users/Krasipeace/badges/large">](https://codewars.com/r/N50bPQ)
