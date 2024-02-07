@@ -1,6 +1,5 @@
 > 🖥️ Studying c# web development [@SoftUni Bulgaria](https://softuni.bg) 👀
 
-`Press F5, if profile stats hasn't loaded...`
 <br />
 [<img alt="Metrics" src="/github-metrics.svg">](#)
 <br />
