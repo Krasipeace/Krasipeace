@@ -2,10 +2,6 @@
 
 <br />
 
-[<img alt="codewars-stats-and-link-to-join-the-battle" src="https://www.codewars.com/users/Krasipeace/badges/large">](https://codewars.com/r/N50bPQ)
-
-<br />
-
 ![Jokes Card](https://readme-jokes.vercel.app/api)
 
 
