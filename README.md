@@ -1,3 +1,4 @@
+[![Metrics](https://github.com/Krasipeace/Krasipeace/actions/workflows/main.yml/badge.svg)](https://github.com/Krasipeace/Krasipeace/actions/workflows/main.yml)
 [<img alt="Metrics" src="/github-metrics.svg">](#)
 
 <br />
