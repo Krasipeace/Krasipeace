@@ -26,7 +26,7 @@ jobs:
 
           # Options
           user: krasipeace
-          template: terminal
+          template: repository
           base: header, activity, community, repositories, metadata
           commits_authoring: krasipeace
           config_timezone: Europe/Sofia
