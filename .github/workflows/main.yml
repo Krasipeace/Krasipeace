@@ -62,6 +62,7 @@ jobs:
       - name: Generate Forked Profile Metrics for Achievements
         uses: stalomeow/metrics@edcae0f874d69e509d25ddd5e750a2f41cd54e10
         with:
+          filename: github-metrics-achievements.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_achievements: yes
