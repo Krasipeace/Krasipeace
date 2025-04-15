@@ -12,7 +12,6 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Generate Profile Metrics
       - uses: lowlighter/metrics@latest
         with:
           # Your GitHub token
