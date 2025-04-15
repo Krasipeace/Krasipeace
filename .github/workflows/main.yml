@@ -62,7 +62,7 @@ jobs:
         uses: stalomeow/metrics@edcae0f874d69e509d25ddd5e750a2f41cd54e10
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: github-metrics.svg
+          filename: github-metrics-achievements.svg
           base: ""
           plugin_achievements: yes
           plugin_achievements_display: compact
