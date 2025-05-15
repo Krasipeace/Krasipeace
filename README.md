@@ -1,8 +1,5 @@
 [<img alt="Metrics" src="/github-metrics.svg">](#)
 <br />
-[<img alt="Achievements" src="/github-metrics-achievements.svg">](#)
-
-<br />
 
 ![Jokes Card](https://readme-jokes.vercel.app/api)
 
