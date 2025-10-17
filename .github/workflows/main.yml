@@ -66,6 +66,8 @@ jobs:
           # Display Settings
           FPS: "50"                                                       # Frames per second for the GIF. Recommended to be 50 or below.
           LOOP: "true"                                                    # Set to "true" to loop the GIF or "false" for a single loop.
+          WIDTH: "900"                                                    # Width of the generated GIF.
+          HEIGHT: "500"                                                   # Height of the generated GIF.
 
           # Glitch Effects
           GLITCHES: "true"                                                # Enable or disable glitches in the GIF.
