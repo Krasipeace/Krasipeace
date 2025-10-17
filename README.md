@@ -1,4 +1,4 @@
-[<img alt="Metrics" src="/github-metrics.svg">](#)
+[<img alt="Metrix Stats" src="/metrix.gif">](#)
 
 <br />
 
