@@ -46,7 +46,7 @@ jobs:
             Followed by: {followers} Users
             Owner of: {total_repos} Repos
 
-            Most used languages: {preferred_languages[10]}
+            Most used languages: {preferred_languages[4]}
 
             Public Gists: {public_gists}
             Private Gists: {private_gists}
@@ -66,8 +66,8 @@ jobs:
           # Display Settings
           FPS: "50"                                                       # Frames per second for the GIF. Recommended to be 50 or below.
           LOOP: "false"                                                   # Set to "true" to loop the GIF or "false" for a single loop.
-          WIDTH: "608"                                                    # Width of the generated GIF.
-          HEIGHT: "542"                                                   # Height of the generated GIF.
+          WIDTH: "800"                                                    # Width of the generated GIF.
+          HEIGHT: "600"                                                   # Height of the generated GIF.
 
           # Glitch Effects
           GLITCHES: "true"                                                # Enable or disable glitches in the GIF.
