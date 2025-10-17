@@ -44,8 +44,7 @@ jobs:
 
             Joined GitHub: {created_at}
             Owner of: {total_repos} Repos
-
-            Mostly used: {preferred_languages[4]}
+            Mostly used: {preferred_languages[2]}
 
             Public Gists: {public_gists}
             Private Gists: {private_gists}
@@ -53,10 +52,9 @@ jobs:
             Total Forks: {total_forks}
             Pushed {total_commits} commits
             Opened {total_open_issues} issues
-            Collected {total_stars}
-            Stalking {followed} users
+            Collected {total_stars} stars
             Stalked by {followers} users
-            Interested in {preferred_topics}
+            Interested in {preferred_topics[2]}
             
             Data updated: {updated_date}
           
@@ -67,9 +65,7 @@ jobs:
 
           # Display Settings
           FPS: "50"                                                       # Frames per second for the GIF. Recommended to be 50 or below.
-          LOOP: "true"                                                   # Set to "true" to loop the GIF or "false" for a single loop.
-          WIDTH: "900"                                                    # Width of the generated GIF.
-          HEIGHT: "500"                                                   # Height of the generated GIF.
+          LOOP: "true"                                                    # Set to "true" to loop the GIF or "false" for a single loop.
 
           # Glitch Effects
           GLITCHES: "true"                                                # Enable or disable glitches in the GIF.
