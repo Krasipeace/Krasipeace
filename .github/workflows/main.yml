@@ -1,60 +1,89 @@
-# Visit https://github.com/lowlighter/metrics#-documentation for full reference
-name: Metrics
-on:
-  # Schedule daily updates at 4am
-  schedule: [{cron: "0 4 * * *"}]
-  # Lines below let you run workflow manually and on each commit
-  workflow_dispatch:
-  push: {branches: ["main"]}
-jobs:
-  github-metrics:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: lowlighter/metrics@latest
-        with:
-          # Your GitHub token
-          # The following scopes are required:
-          #  - public_access (default scope)
-          # The following additional scopes may be required:
-          #  - read:org      (for organization related metrics)
-          #  - read:user     (for user related data)
-          #  - read:packages (for some packages related data)
-          #  - repo          (optional, if you want to include private repositories)
-          token: ${{ secrets.METRICS_TOKEN }}
 
-          # Options
-          user: krasipeace
-          template: classic
-          base: header, activity, community, repositories, metadata
-          commits_authoring: krasipeace
-          config_timezone: Europe/Sofia
-          plugin_activity: yes
-          plugin_activity_days: 14
-          plugin_activity_filter: all
-          plugin_activity_limit: 5
-          plugin_activity_load: 300
-          plugin_activity_visibility: all
-          plugin_habits: yes
-          plugin_habits_charts_type: classic
-          plugin_habits_days: 14
-          plugin_habits_facts: yes
-          plugin_habits_from: 200
-          plugin_habits_languages_limit: 10
-          plugin_habits_languages_threshold: 0%
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-          plugin_languages: yes
-          plugin_languages_analysis_timeout: 15
-          plugin_languages_analysis_timeout_repositories: 7.5
-          plugin_languages_categories: markup, programming
-          plugin_languages_colors: github
-          plugin_languages_details: percentage
-          plugin_languages_limit: 10
-          plugin_languages_recent_categories: markup, programming
-          plugin_languages_recent_days: 14
-          plugin_languages_recent_load: 300
-          plugin_languages_sections: most-used
-          plugin_languages_threshold: 0%
-          plugin_gists: yes
+# GitHub Action template for generating a Metrix GIF
+# Source, documentation and examples: https://github.com/joanroig/metrix
+
+name: Profile Metrix
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs daily at midnight UTC
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  generate-metrix:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Generate Metrix GIF
+        uses: joanroig/metrix@main
+        with:
+          # Authentication
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN || secrets.METRICS_TOKEN }}  # DO NOT MODIFY: Retrieves the GitHub token for authentication. Uses PAT if available, falls back to GITHUB_TOKEN for public data.
+          GITHUB_USERNAME: "krasipeace"                                    # GitHub username for displaying data. Replace with any username if needed.
+
+          # Logging
+          LOG_LEVEL: "INFO"                                               # Application log level.
+          FFMPEG_LOG_LEVEL: "ERROR"                                       # FFmpeg log level
+          
+          # Font Settings
+          FONT_SIZE: "20"                                                 # Font size for the main text.
+          SYMBOL_FONT_SIZE: "20"                                          # Font size for symbols.
+          FONT_PATH: "assets/MxPlus_IBM_BIOS.ttf"                         # Path to the primary font file.
+          SYMBOL_FONT_PATH: "assets/MxPlus_IBM_BIOS.ttf"                  # Path to the symbol font file.
+
+          # Color Settings
+          BACKGROUND_COLOR: "black"                                      # Color of the background. Options include CSS color names, hex codes, "random", "random-light", "random-dark", "complementary", "contrasting", "shade", "shade-light", "shade-dark".
+          TEXT_COLOR: "mediumturquoise"                                  # Color of the text. Same options as BACKGROUND_COLOR.
+          MINIMUM_CONTRAST: "11.27"                                      # Minimum contrast ratio between text and background. Range is from 1 to 21.
+
+          # Content Settings
+          TEXT: |                                                        # Text for the Metrix display. Use variables for GitHub data like {username}, {created_at}, etc.
+            {username}'s GitHub Stats
+            -----------------------
+
+            Joined GitHub: {created_at}
+            Followed by: {followers} Users
+            Owner of: {total_repos} Repos
+
+            Most used languages: {preferred_languages[10]}
+
+            Public Gists: {public_gists}
+            Private Gists: {private_gists}
+            
+            Total Forks: {total_forks}
+            Total Commits: {total_commits}
+            Total Open Issues: {total_open_issues}
+            Total Stars: {total_stars}
+            
+            Data updated: {updated_date}
+          
+          TYPING_CHARACTER: "█"                                           # Character used for the typing effect.
+          ACTIVITY: "true"                                                # Enable or disable the activity section.
+          ACTIVITY_TEXT: "Last month commit activity:"                    # Text for the activity section.
+          ACTIVITY_DAYS: "29"                                             # Number of days for the activity chart.
+
+          # Display Settings
+          FPS: "50"                                                       # Frames per second for the GIF. Recommended to be 50 or below.
+          LOOP: "false"                                                   # Set to "true" to loop the GIF or "false" for a single loop.
+          WIDTH: "608"                                                    # Width of the generated GIF.
+          HEIGHT: "542"                                                   # Height of the generated GIF.
+
+          # Glitch Effects
+          GLITCHES: "true"                                                # Enable or disable glitches in the GIF.
+          MAX_GLITCHES: "10"                                              # Maximum number of glitches that can occur simultaneously.
+          GLITCH_PROBABILITY: "11"                                        # Probability of a glitch happening in a frame, between 0 and 100.
+
+          # Output Settings
+          OUTPUT_FILE_PATH: "metrix.gif"                                  # CAUTION: If modified, change the path in the step below. Output file path for the generated GIF.
+
+      - name: Commit and Push Metrix GIF
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add metrix.gif
+          git commit -m "Update GitHub Metrix GIF" || echo "No changes to commit"
+          git push
+        shell: bash
