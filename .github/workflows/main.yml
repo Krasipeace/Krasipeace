@@ -1,8 +1,6 @@
 
-# GitHub Action template for generating a Metrix GIF
 # Source, documentation and examples: https://github.com/joanroig/metrix
-
-name: Profile Metrix
+name: Profile Stats
 
 on:
   schedule:
