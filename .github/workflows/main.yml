@@ -43,18 +43,20 @@ jobs:
             -----------------------
 
             Joined GitHub: {created_at}
-            Followed by: {followers} Users
             Owner of: {total_repos} Repos
 
-            Most used languages: {preferred_languages[4]}
+            Mostly used: {preferred_languages[4]}
 
             Public Gists: {public_gists}
             Private Gists: {private_gists}
             
             Total Forks: {total_forks}
-            Total Commits: {total_commits}
-            Total Open Issues: {total_open_issues}
-            Total Stars: {total_stars}
+            Pushed {total_commits} commits
+            Opened {total_open_issues} issues
+            Collected {total_stars}
+            Stalking {followed} users
+            Stalked by {followers} users
+            Interested in {preferred_topics}
             
             Data updated: {updated_date}
           
@@ -65,14 +67,14 @@ jobs:
 
           # Display Settings
           FPS: "50"                                                       # Frames per second for the GIF. Recommended to be 50 or below.
-          LOOP: "false"                                                   # Set to "true" to loop the GIF or "false" for a single loop.
-          WIDTH: "800"                                                    # Width of the generated GIF.
-          HEIGHT: "600"                                                   # Height of the generated GIF.
+          LOOP: "true"                                                   # Set to "true" to loop the GIF or "false" for a single loop.
+          WIDTH: "900"                                                    # Width of the generated GIF.
+          HEIGHT: "500"                                                   # Height of the generated GIF.
 
           # Glitch Effects
           GLITCHES: "true"                                                # Enable or disable glitches in the GIF.
-          MAX_GLITCHES: "10"                                              # Maximum number of glitches that can occur simultaneously.
-          GLITCH_PROBABILITY: "11"                                        # Probability of a glitch happening in a frame, between 0 and 100.
+          MAX_GLITCHES: "17"                                              # Maximum number of glitches that can occur simultaneously.
+          GLITCH_PROBABILITY: "42"                                        # Probability of a glitch happening in a frame, between 0 and 100.
 
           # Output Settings
           OUTPUT_FILE_PATH: "metrix.gif"                                  # CAUTION: If modified, change the path in the step below. Output file path for the generated GIF.
