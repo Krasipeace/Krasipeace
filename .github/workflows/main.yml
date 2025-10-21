@@ -27,8 +27,8 @@ jobs:
           FFMPEG_LOG_LEVEL: "ERROR"                                       # FFmpeg log level
           
           # Font Settings
-          FONT_SIZE: "20"                                                 # Font size for the main text.
-          SYMBOL_FONT_SIZE: "20"                                          # Font size for symbols.
+          FONT_SIZE: "16"                                                 # Font size for the main text.
+          SYMBOL_FONT_SIZE: "16"                                          # Font size for symbols.
           FONT_PATH: "assets/MxPlus_IBM_BIOS.ttf"                         # Path to the primary font file.
           SYMBOL_FONT_PATH: "assets/MxPlus_IBM_BIOS.ttf"                  # Path to the symbol font file.
 
@@ -46,10 +46,9 @@ jobs:
             Owner of: {total_repos} Repos
             Mostly used: {preferred_languages[2]}
 
+            Total Forks: {total_forks}
             Public Gists: {public_gists}
             Private Gists: {private_gists}
-            
-            Total Forks: {total_forks}
             Pushed {total_commits} commits
             Opened {total_open_issues} issues
             Collected {total_stars} stars
@@ -66,8 +65,8 @@ jobs:
           # Display Settings
           FPS: "50"                                                       # Frames per second for the GIF. Recommended to be 50 or below.
           LOOP: "true"                                                    # Set to "true" to loop the GIF or "false" for a single loop.
-          WIDTH: "900"                                                    # Width of the generated GIF.
-          HEIGHT: "500"                                                   # Height of the generated GIF.
+          WIDTH: "700"                                                    # Width of the generated GIF.
+          HEIGHT: "400"                                                   # Height of the generated GIF.
 
           # Glitch Effects
           GLITCHES: "true"                                                # Enable or disable glitches in the GIF.
