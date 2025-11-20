@@ -2,7 +2,7 @@
 
 <br />
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=krasipeace&column=4&margin-w=15&margin-h=15&theme=darkhub)](#)
+[![trophy api is dead](https://github-profile-trophy.vercel.app/?username=krasipeace&column=4&margin-w=15&margin-h=15&theme=darkhub)](#)
 
 <br />
 
