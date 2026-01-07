@@ -27,7 +27,7 @@ jobs:
           FFMPEG_LOG_LEVEL: "ERROR"                                       # FFmpeg log level
           
           # Font Settings
-          FONT_SIZE: "16"                                                 # Font size for the main text.
+          FONT_SIZE: "14"                                                 # Font size for the main text.
           SYMBOL_FONT_SIZE: "16"                                          # Font size for symbols.
           FONT_PATH: "assets/MxPlus_IBM_BIOS.ttf"                         # Path to the primary font file.
           SYMBOL_FONT_PATH: "assets/MxPlus_IBM_BIOS.ttf"                  # Path to the symbol font file.
@@ -41,21 +41,16 @@ jobs:
           TEXT: |                                                        # Text for the Metrix display. Use variables for GitHub data like {username}, {created_at}, etc.
             {username}'s GitHub Stats
             -----------------------
-
-            Joined GitHub: {created_at}
             Owner of: {total_repos} Repos
             Mostly used: {preferred_languages[2]}
-
-            Total Forks: {total_forks}
             Public Gists: {public_gists}
             Private Gists: {private_gists}
-            Pushed {total_commits} commits
-            Opened {total_open_issues} issues
-            Collected {total_stars} stars
+            {total_commits} pushed commits
+            {total_open_issues} open issues
+            {total_stars} collected stars
             Stalked by {followers} users
             Interested in {preferred_topics[2]}
-            
-            Data updated: {updated_date}
+            Last updated: {updated_date}
           
           TYPING_CHARACTER: "█"                                           # Character used for the typing effect.
           ACTIVITY: "true"                                                # Enable or disable the activity section.
@@ -65,8 +60,8 @@ jobs:
           # Display Settings
           FPS: "50"                                                       # Frames per second for the GIF. Recommended to be 50 or below.
           LOOP: "true"                                                    # Set to "true" to loop the GIF or "false" for a single loop.
-          WIDTH: "700"                                                    # Width of the generated GIF.
-          HEIGHT: "400"                                                   # Height of the generated GIF.
+          WIDTH: "600"                                                    # Width of the generated GIF.
+          HEIGHT: "350"                                                   # Height of the generated GIF.
 
           # Glitch Effects
           GLITCHES: "true"                                                # Enable or disable glitches in the GIF.
