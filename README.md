@@ -4,11 +4,11 @@
 
 #### My Libs:
 
-| Package ID | Downloads | Version |
-| --- | --- | --- |
-| [FolderScanToTxt](https://github.com/Krasipeace/FolderScanToTxt) | ![Downloads](https://img.shields.io/nuget/dt/FolderScanToTxt) | ![Version](https://img.shields.io/nuget/v/FolderScanToTxt) |
-| [k.18auditgen](https://github.com/Krasipeace/N18AuditGenerator)  | ![Downloads](https://img.shields.io/nuget/dt/k.n18auditgen)   | ![Version](https://img.shields.io/nuget/v/k.n18auditgen)   |
-| [pchce](https://github.com/Krasipeace/PCHCE)                     | ![Downloads](https://img.shields.io/nuget/dt/pchce)           | ![Version](https://img.shields.io/nuget/v/pchce)           |
+| Package ID                                                         | Downloads                                                     | Version                                                    |
+| ------------------------------------------------------------------ | ------------------------------------------------------------- | ---------------------------------------------------------- |
+| [FolderScanToTxt](https://www.nuget.org/packages/FolderScanToTxt/) | ![Downloads](https://img.shields.io/nuget/dt/FolderScanToTxt) | ![Version](https://img.shields.io/nuget/v/FolderScanToTxt) |
+| [k.18auditgen](https://www.nuget.org/packages/k.n18auditgen/)      | ![Downloads](https://img.shields.io/nuget/dt/k.n18auditgen)   | ![Version](https://img.shields.io/nuget/v/k.n18auditgen)   |
+| [pchce](https://www.nuget.org/packages/pchce/)                     | ![Downloads](https://img.shields.io/nuget/dt/pchce)           | ![Version](https://img.shields.io/nuget/v/pchce)           |
 
 <br />
 
