@@ -2,17 +2,15 @@
 
 <br />
 
-#### My Libs:
+<details>
+<summary>Libs</summary>
 
 | Package ID                                                         | Downloads                                                     | Version                                                    |
 | ------------------------------------------------------------------ | ------------------------------------------------------------- | ---------------------------------------------------------- |
 | [FolderScanToTxt](https://www.nuget.org/packages/FolderScanToTxt/) | ![Downloads](https://img.shields.io/nuget/dt/FolderScanToTxt) | ![Version](https://img.shields.io/nuget/v/FolderScanToTxt) |
 | [k.18auditgen](https://www.nuget.org/packages/k.n18auditgen/)      | ![Downloads](https://img.shields.io/nuget/dt/k.n18auditgen)   | ![Version](https://img.shields.io/nuget/v/k.n18auditgen)   |
 | [pchce](https://www.nuget.org/packages/pchce/)                     | ![Downloads](https://img.shields.io/nuget/dt/pchce)           | ![Version](https://img.shields.io/nuget/v/pchce)           |
-
-<br />
-
-![Jokes Card](https://readme-jokes.vercel.app/api)
+</details>
 
 <br />
 
