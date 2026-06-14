@@ -1,4 +1,9 @@
+<details open>
+<summary>Stats</summary>
+
 [<img alt="stats" src="/github-metrics.svg">](#)
+
+</details>
 
 <br />
 
