@@ -8,6 +8,17 @@
 <br />
 
 <details>
+  <summary>Mods</summary>
+  
+| Name | Repo | Location |
+| --- | --- | --- |
+| Farthest Frontier Mods Collection | [FF-GameMods](https://github.com/Krasipeace/FF-GameMods) | [Steam](https://steamcommunity.com/id/krasipeace/myworkshopfiles?appid=1044720) |
+  
+</details>
+
+<br />
+
+<details>
 <summary>Libs</summary>
 
 | Package ID                                                         | Downloads                                                     | Version                                                    |
